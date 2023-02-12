@@ -1,7 +1,7 @@
 pipeline {
+        agent { label 'centos' }
   stages {
     stage('Aqua scanner') {
-      agent { label 'centos' }
       {
           image 'aquasec/aqua-scanner'
       }
