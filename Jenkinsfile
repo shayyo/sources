@@ -4,7 +4,6 @@ pipeline {
       agent { label 'centos' }
       {
           image 'aquasec/aqua-scanner'
-        }
       }
       steps {
         withCredentials([
