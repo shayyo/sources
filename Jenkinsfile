@@ -1,4 +1,7 @@
 pipeline {
+    agent {
+    label 'centos'
+  }
   stages {
     stage('Aqua scanner') {
       agent {
