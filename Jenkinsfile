@@ -15,12 +15,7 @@ pipeline {
         sh 'echo "Building....sh"'
       }
     }
-    stage('Aqua scanner') {
-      agent {
-        docker {
-          image 'aquasec/aqua-scanner'
-        }
-      }
+    stage('CloudSploit') {
       steps {
         echo 'Cloudsploit...'
         withCredentials([
