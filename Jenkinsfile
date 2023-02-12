@@ -2,7 +2,7 @@ pipeline {
   stages {
     stage('Aqua scanner') {
       agent {
-        docker {
+        centos {
           image 'aquasec/aqua-scanner'
         }
       }
